@@ -40,3 +40,8 @@ Or, use [the Nix package].
 
 [the Nix package]: https://github.com/nat-418/grimoire
 
+## Miscellaneous
+
+`clonetrees` is open source-software distributed under the 0BSD license.
+To report bugs or view source code, see https://www.github.com/nat-418/clonetrees.
+
