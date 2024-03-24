@@ -2,7 +2,7 @@
 
 package require Tcl 8.6
 
-set version 0.0.1
+set version 0.0.3
 
 proc must {description commands} {
 	try {
@@ -38,12 +38,11 @@ proc main {origin destination} {
 		incr i
 	}
 
-	puts -nonewline "Enter the numbers of the branches you want to setup, "
-	puts -nonewline "separated by spaces: \n> "
-	flush stdout
-	
 	must "choose branches to setup" {
 		if {[llength $branches] > 0} {
+			puts -nonewline "Enter the numbers of the branches you want to setup, "
+			puts -nonewline "separated by spaces: \n> "
+			flush stdout
 			set branches [lmap idx [gets stdin] {
 				lindex $branches $idx
 			}]
